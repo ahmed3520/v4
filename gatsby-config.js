@@ -5,7 +5,7 @@ module.exports = {
     title: 'Ahmed Taha',
     description:
       'Ahmed Taha is a software engineer who specializes in building exceptional digital experiences.',
-    siteUrl: 'ataha3520.vercel.app', // No trailing slash allowed!
+    siteUrl: 'https://ataha3520.vercel.app', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@ataha3520',
   },

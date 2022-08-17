@@ -224,6 +224,7 @@ export const pageQuery = graphql`
             draft
           }
           html
+          tableOfContents
         }
       }
     }

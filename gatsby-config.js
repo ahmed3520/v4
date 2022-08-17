@@ -61,7 +61,12 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
+        tableOfContents: {
+          heading: null,
+          maxDepth: 6,
+        },
         plugins: [
+          'gatsby-remark-autolink-headers',
           {
             // https://www.gatsbyjs.org/packages/gatsby-remark-external-links
             resolve: 'gatsby-remark-external-links',
@@ -70,6 +75,7 @@ module.exports = {
               rel: 'nofollow noopener noreferrer',
             },
           },
+
           {
             // https://www.gatsbyjs.org/packages/gatsby-remark-images
             resolve: 'gatsby-remark-images',
@@ -152,7 +158,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-45666519-2',
+        trackingId: 'G-YPE6RTLWKK',
       },
     },
   ],

@@ -83,8 +83,18 @@ const PostTemplate = ({ data, location }) => {
                 </Link>
               ))}
           </p>
+          {}
         </StyledPostHeader>
+        {/*  {typeof tableOfContents === 'undefined' ? null : (
 
+          <Toc  >
+            
+            <InnerScroll>
+              <h2>Table of contents</h2>
+              <div  dangerouslySetInnerHTML={{ __html: tableOfContents }}></div>
+            </InnerScroll>
+          </Toc>
+        )} */}
         <StyledPostContent dangerouslySetInnerHTML={{ __html: html }} />
       </StyledPostContainer>
     </Layout>
@@ -102,6 +112,7 @@ export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { slug: { eq: $path } }) {
       html
+      tableOfContents
       frontmatter {
         title
         description
